@@ -1,6 +1,11 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
 .mom{
    max-width: 1024px;
    margin: 0 auto; 
+   height: 1000px;
 }
 .menu{
   margin-bottom: 50px;
@@ -34,12 +39,12 @@
     flex-wrap: wrap;
 }
 .footer{
-   margin-top:50px ;
+   margin-top:70px ;
    text-align: center;
    font-size: 40px;
-  
+   background-color:#F6F6F6 ;
    padding: 50px;
-   margin: 150px;
+  
 }
 .appStoreImage{
     width: 50%;
@@ -64,7 +69,7 @@
     margin-top: 10px;
     margin-bottom: 20px;
     border: none;
-    background-color: lightgray;
+    background-color: #F6F6F6;
     height: 35px;
     width: 300px;
     border-radius: 15px;
@@ -96,10 +101,16 @@
     
 }
 .header{
+    background-color: #FAFAFAFA;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
-
+    height: 100px;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    position: sticky;
+    top: 0;
+    opacity: 0.9;
 }
 .menuContainer{
 
@@ -116,8 +127,28 @@
     }
     .left{
         width: 100%;
+        margin-bottom: 50px;
     }
     .inner{
+        width: 64%;
         margin: 0 auto;
+    }
+    .right{
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+    }
+    .rightImage{
+        margin: 0 -50%;
+    }
+}
+media(max-width:375px){
+    .inner{
+        width: 95%;
+    }
+    .footer{
+        margin-top: 30px;
+        font-size: 30px;
+        padding: 10px;
     }
 }
